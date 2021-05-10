@@ -47,7 +47,10 @@ class BaseModelViewSet(BaseAPIMixin, ModelViewSet):
 
 class BaseUserModelViewSet(BaseModelViewSet):
     def get_queryset(self):
-        return self.model_class.objects.filter(pk=self.user.pk)
+        if self.user:
+            return self.model_class.objects.filter(pk=self.user.pk)
+        else:
+            return self.model_class.objects.none()
 
     def get_permissions(self):
         if self.action in ['create', 'list']:
