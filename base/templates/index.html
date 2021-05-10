@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구글로그인테스트</title>
+</head>
+<body>
+<section>
+    <button onclick="open('/oauth2/google/login/', 'openWindow', 'width=500,height=600')">구글 회원가입+로그인</button>
+    <button onclick="$.post('/logout')">로그아웃</button>
+</section>
+<script>
+    function resetUser(){
+        window.location.reload()
+    }
+    $(document).ready(function(){
+        resetUser()
+    })
+</script>
+</body>
+</html>
