@@ -1,8 +1,8 @@
 # broccoli
 ## Description
 - api 연습하라고 보안같은 거 안따지고 대충 만든거
-- **이거 그대로 어플 만들면 절대 안 됨.**
 - https://broccoli-practice.herokuapp.com/api/user/ 에 api보내면 됨.
+- **이거 그대로 어플 만들면 절대 안 됨.**
 
 ## REST API
 - 로그인, 회원가입 말고는 전부 로그인해야만 사용가능하고 다른 사용자가 등록한 데이터 볼 수 없음
